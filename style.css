@@ -1,34 +1,36 @@
-/* style.css */
-
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f1f1f1;
     color: #333;
 }
 
 header {
-    background: #333;
+    background: #e70010;
     color: white;
-    padding: 15px 0;
+    padding: 20px 0;
     text-align: center;
+    font-size: 24px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 .container {
@@ -37,36 +39,67 @@ nav ul li a {
     padding: 20px;
 }
 
+h1, h2 {
+    color: #e70010;
+}
+
 h2 {
-    text-align: center;
-    color: #444;
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 .project-grid {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .project-card {
-    background: white;
-    padding: 15px;
-    margin: 10px;
+    background: #fff;
+    padding: 20px;
+    margin: 15px;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    width: 30%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 23%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
 .project-card img {
     width: 100%;
+    border-radius: 10px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.view-project {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #e70010;
+    color: white;
+    border: none;
     border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.view-project:hover {
+    background-color: #c6000e;
 }
 
 footer {
     text-align: center;
-    padding: 10px;
-    background: #333;
+    padding: 20px;
+    background: #e70010;
     color: white;
-    margin-top: 20px;
+    margin-top: 30px;
+    font-size: 14px;
 }
